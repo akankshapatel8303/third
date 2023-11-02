@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adverture</title>
+    <link rel="stylesheet" href="item.css">
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* home  */
+        .navbar h1{
+            color: white;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .btn{
+            font-size: 1.1rem;
+            background-color: rgb(54, 8, 43);
+            color: white;
+            border-radius: 10px;
+            margin: 0px 15px;
+        }
+        .btn:hover{
+            background-color: rgb(82, 11, 74);
+        }
+        
+        li{
+            margin: 0px 15px;
+            list-style: none;
+        }
+        li a:hover{
+            color: rgb(226, 187, 204);
+        }
+        
+        ul{
+            display: flex;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* header  */
+        header{
+            display: flex;
+    flex-direction: column;
+    height: 450px;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+
+        }
+        .header-content{
+            text-align: center;
+            color: white;
+        }
+        header::before{
+            content: "";
+            background: url(photo18.jpg) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            
+        }
+        .header-content p{
+            font-size: 2rem;
+            margin: 0px;
+        }
+        .header-content .line{
+            width: 120px;
+            height: 5px;
+            background-color:rgb(177, 6, 49);
+            position: absolute;
+            left: 590px;
+           
+        }
+        .header-content h1{
+            font-size: 3rem;
+        }
+        .header-content a{
+            margin: 0px;
+            background-color: rgb(184, 5, 68);
+            color: white;
+            padding: 6px 10px;
+            font-size: 1.1rem;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+        .header-content a:hover{
+            background-color: rgb(130, 5, 45);
+        }
+        /* container  */
+        .container h1{
+            margin-top: 115px;
+            margin-bottom: 70px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .img1{
+            width: 600px;
+            margin: 0px 15px;
+        }
+        .container .img2{
+            width: 600px;
+            margin: 0px 15px;
+        }
+        .image1 h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+        }
+        .image1 p{
+            background-color: aliceblue;
+            width: 95%;
+            text-align: center;
+        }
+        .image1 a{
+            width: 100px;
+            font-size: 1.1rem;
+            background-color: rgb(54, 8, 43);
+            color: white;
+            border-radius: 10px;
+            margin-left: 270px;
+            padding: 3px 0px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .image a:hover{
+            background-color: rgb(82, 11, 74);
+        }
+        .image2 h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+        }
+        .image2 p{
+            background-color: aliceblue;
+            width: 95%;
+            text-align: center;
+        }
+        .image2 a{
+            width: 100px;
+            font-size: 1.1rem;
+            background-color: rgb(54, 8, 43);
+            color: white;
+            border-radius: 10px;
+            margin-left: 270px;
+            padding: 3px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .image2 a:hover{
+            background-color: rgb(82, 11, 74);
+        }
+
+        /* explore  */
+        .explore{
+            display: flex;
+    flex-direction: column;
+    height: 710px;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+        }
+        .explore::before{
+            content: "";
+            background: url(photo17.jpg) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* opacity: 0.9; */
+        }
+        .explore h1{
+        text-align: center;
+        margin: 0px;
+        }
+        .explore p{
+        text-align: center;
+        }
+        .explore a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .explore a{
+            margin: 0px;
+            background-color: rgb(246, 3, 64);
+            color: white;
+            padding: 6px 10px;
+            font-size: 1.1rem;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+        .explore a:hover{
+            background-color: rgb(130, 5, 34);
+        }
+        .explore .line{
+            width: 120px;
+            height: 5px;
+            background-color:rgb(246, 3, 64);
+            margin: 0px;
+        }
+        
+        /* tour */
+        .tour{
+            margin: 0px 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-gap: 15px;
+        }
+        .dest h1{
+            text-align: center;
+           padding-top: 190px;
+           padding-left: 10px;
+           padding-right: 10px;
+           margin: 0px;
+        }
+        .dest .line{
+            width: 120px;
+            height: 5px;
+            margin: 0px;
+            background-color:rgb(246, 3, 64);
+            position: absolute;
+            left: 150px;
+
+        }
+        .p{
+            
+            padding-top: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .p a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            font-size: 1.1rem;
+            background-color: rgb(54, 8, 43);
+            color: white;
+            border-radius: 10px;
+            padding: 3px 0px;
+            text-decoration: none;
+            margin-left: 100px;
+        }
+        .p a:hover{
+            background-color: rgb(82, 11, 74);
+        }
+        .p p{
+            text-align: center;
+        }
+        .tour img{
+            width: 400px;
+        }
+        
+        /* footer  */
+        footer{
+            background-color: rgb(4, 53, 117);
+            color: white;
+            margin-top: 50px;
+            padding: 10px 0px;
+        }
+        .center p{
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="home">
+            <div class="navbar">
+                <h1>ADVERTURE</h1>
+                <ul>
+                    <li class="li1"><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <button class="btn">Contact</button>
+                </ul>
+                
+            </div>
+    </div>
+    <header>
+        <div class="header-content">
+            <p>Explore The Colorful World</p>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#">Learn More</a>
+        </div>
+       
+    </header>
+    <div class="container">
+        <h1>Upcoming Events</h1>
+        <div class="image">
+            <div class="image1">
+        <img src="photo3.jpg" alt="" class="img1">
+        <h2>Event Camp Trek</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequuntur repudiandae fugit.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="image2">
+        <img src="photo7.jpg" alt="" class="img2">
+        <h2>Walking Holidays</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error alias mollitia consequatur.</p>
+        <a href="#">Learn More</a>
+    </div>
+    </div>
+    </div>
+    <div class="explore">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam nesciunt aut tempore unde esse sunt dicta itaque laboriosam assumenda, repellendus velit necessitatibus nostrum.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="tour">
+        <div class="dest">
+            <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+            </div>
+        <img src="photo9.jpg" alt="">
+        <img src="photo14.jpg" alt="">
+        <div class="p">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, asperiores ea possimus eius reiciendis magni quisquam sapiente odit ratione, quae nobis? Quas, quidem quod!</p>
+            <a href="#">Learn More</a>
+        </div>
+        <img src="photo2.jpg" alt="">
+        <img src="photo13.jpg" alt="">
+        
+    </div>
+    <footer>
+        <div class="center">
+            <p>123 Fifth Avenue,NY 10160, New York USA|Phone:800-123-456|Email:contact@example.com</p>
+            <p>Copyright 2020 Outdoor Adventure</p>
+        </div>
+     </footer>
+</body>
+</html>
